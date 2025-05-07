@@ -9,10 +9,16 @@
     --lightblue: #CCEFF6;
     --lightpink: #F7CEDC;
     --text-color: #1F1F1F;
+    --border-color: #C2CDD8;
 }
 
 a {
     text-decoration: none;
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: var(--text-color);
 }
 
 .btn {
@@ -222,3 +228,109 @@ a {
 .advantages_cards .card3 {
     background: var(--lightpink);
 }
+
+/* Take care */
+
+.takeCare {
+    margin-top: 200px;
+}
+
+.takeCare .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.takeCare_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.takeCare_list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.takeCare_list_item {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 17px 0;
+}
+
+.takeCare_title {
+    font-family: Fraunces;
+    font-weight: 400;
+    font-size: 42px;
+    letter-spacing: 0.2px;
+    width: 650px;
+    margin: 0;
+}
+
+.takeCare_list_title {
+    font-family: Fraunces;
+    font-weight: 400;
+    font-size: 21px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+/* before and after icons in list */
+
+.--first::before {
+    content: url('./assets/icons/icon10.png');
+    margin-right: 16px;
+}
+
+.--first::after {
+    content: url('assets/icons/arrow-buttom.png');
+    margin-left: 170px;
+    align-self: start;
+}
+
+.--second::before {
+    content: url('./assets/icons/icon11.png');
+    margin-right: 16px;
+}
+
+.--second::after {
+    content: url('assets/icons/arrow-buttom.png');
+    margin-left: 170px;
+    align-self: start;
+}
+
+.--third::before {
+    content: url('./assets/icons/icon12.png');
+    margin-right: 16px;
+}
+
+.--third::after {
+    content: url('assets/icons/arrow-buttom.png');
+    margin-left: 170px;
+    align-self: start;
+}
+
+.--fourth::before {
+    content: url('./assets/icons/icon13.png');
+    margin-right: 16px;
+}
+
+.--fourth::after {
+    content: url('assets/icons/arrow-buttom.png');
+    margin-left: 170px;
+    align-self: start;
+}
+
+.takeCare_desc {
+    width: 350px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    margin: 0 0 0 50px;
+}
+
