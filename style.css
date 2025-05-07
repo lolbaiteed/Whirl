@@ -159,3 +159,62 @@ a {
     gap: 50px;
     margin-right: 85px;
 }
+
+/* Advatages */
+
+.advantages {
+    padding-top: 160px;
+}
+
+.advantages .container {
+    box-sizing: border-box;
+}
+
+.advantages_cards {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.advantage_card {
+    width: 300px;
+    height: 200px;
+    padding: 25px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantage_img {
+   margin-top: 15px;
+   margin-bottom: 0;
+   height: 55px;
+   width: 55px;
+}
+
+.advantage_title {
+    font-family: Fraunces;
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 0.2px;
+    margin: 8px 0 11px;
+}
+
+.advantage_desc {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    width: 287px;
+}
+
+.advantages_cards .card1 {
+    background: var(--yellow);
+}
+
+.advantages_cards .card2 {
+    background: var(--lightblue);
+}
+
+.advantages_cards .card3 {
+    background: var(--lightpink);
+}
