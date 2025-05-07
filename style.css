@@ -146,6 +146,10 @@ a {
 
 /* Trusted */
 
+.trusted {
+    padding-top: 130px;
+}
+
 .trusted .container {
     display: flex;
     justify-content: center;
