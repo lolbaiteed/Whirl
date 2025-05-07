@@ -28,6 +28,12 @@ a {
     color: #FFFFFF;
 }
 
+.container {
+    width: 1130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* header */
 
 .header ul {
@@ -68,7 +74,7 @@ a {
     letter-spacing: 0.2px;
 }
 
-.header_buttons {
+.header_btn_wrp {
     display: flex;
     gap: 15px;
 }
@@ -87,4 +93,53 @@ a {
     height: 36px;
     width: 139px;
     font-size: 15px;
+}
+
+/* Hero */
+
+.hero {
+    padding: 100px 0;
+}
+
+.hero .container {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+}
+
+.hero_title {
+    font-family: Fraunces;
+    font-size: 58px;
+    font-weight: 400;
+    width: 485px;
+}
+
+.hero_desc {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    width: 340px;
+    border: 1px solid;
+    letter-spacing: 0.2px;
+    padding: 5px 28px 0px 0px;
+}
+
+.hero_btn_wrp {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.btn.hero_more {
+    width: 110px;
+    color: var(--blue);
+    background: none;
+}
+
+.btn.hero_more::after {
+   content: url("assets/icons/arrow-left.png");
+   display: flex;
+   justify-content: center;
+   margin-left: 5px;
+   height: 21px;
 }
