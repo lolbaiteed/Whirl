@@ -143,3 +143,19 @@ a {
    margin-left: 5px;
    height: 21px;
 }
+
+/* Trusted */
+
+.trusted .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trusted_list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-right: 85px;
+}
