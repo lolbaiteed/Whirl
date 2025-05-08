@@ -334,3 +334,48 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0 0 0 50px;
 }
 
+/* About */
+
+.about {
+    margin-top: 120px;
+}
+
+.about .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about_title {
+    font-family: Fraunces; 
+    font-size: 42px;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+}
+
+.about_list {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.about_list_title {
+    margin: 0;
+}
+
+.daily::before {
+    content: url('assets/icons/icon4.png');
+}
+
+.save::before {
+    content: url('assets/icons/icon5.png');
+}
+
+.all-in-one {
+    margin-top: 60px;
+}
+
+.about_list_desc {
+    width: 233px;    
+    margin: 0;
+}
