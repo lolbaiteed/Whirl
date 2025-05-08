@@ -10,6 +10,7 @@
     --lightpink: #F7CEDC;
     --text-color: #1F1F1F;
     --border-color: #C2CDD8;
+    --lightgray: #626A72;
 }
 
 a {
@@ -576,4 +577,52 @@ h1, h2, h3, h4, h5, h6, p {
 .blog .btn {
     background: none;
     color: var(--blue);
+}
+
+/* get started */
+
+.get_started {
+    margin-top: 160px;
+}
+
+.get_started .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.get_started .btn {
+    margin-top: 36px;
+}
+
+.get_started_title {
+    font-family: Fraunces;
+    font-weight: 400;
+    font-size: 42px;
+    letter-spacing: 0.2px;
+}
+
+.get_started_desc {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    width: 481px;
+}
+
+.get_started_bottom_wrp {
+    display: flex;
+    gap: 32px;
+}
+
+.get_started_adv {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    color: var(--lightgray);
+}
+
+.get_started_adv::before {
+    content: url('assets/icons/check.png');
+    display: inline-flex;
 }
