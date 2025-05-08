@@ -379,3 +379,68 @@ h1, h2, h3, h4, h5, h6, p {
     width: 233px;    
     margin: 0;
 }
+
+/* "set" section */
+
+.set {
+    height: 550px;
+    margin-top: 200px;
+    background: var(--blue);
+    display: flex;
+    align-items: center;
+}
+
+.set .container {
+    display: flex;
+    flex-direction: column; 
+}
+
+.set_content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.set_list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.set .btn {
+    margin-top: 16px;
+}
+
+.set_title {
+    font-family: Fraunces;
+    font-weight: 400;
+    font-size: 42px;
+    letter-spacing: 0.2px;
+    width: 403px;
+    margin: 0;
+    color: #fff;
+}
+
+.set_subtitle {
+   font-family: Inter;
+   font-weight: 400;
+   font-size: 18px;
+   letter-spacing: 0.2px;
+   width: 481px;
+   color: #fff;
+}
+
+.set_list_title::before {
+    content: url('assets/icons/check.png');
+    margin-right: 5px;
+}
+
+.set_list_title {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    margin: 2px;
+    color: #fff;
+}
