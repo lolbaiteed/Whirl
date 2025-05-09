@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .container {
-    width: 1130px;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -92,7 +92,6 @@ h1, h2, h3, h4, h5, h6, p {
 
     width: 89px;
     height: 35px;
-    border: 1px solid;
     font-size: 15px;
 }
 
@@ -177,14 +176,10 @@ h1, h2, h3, h4, h5, h6, p {
     padding-top: 160px;
 }
 
-.advantages .container {
-    box-sizing: border-box;
-}
-
 .advantages_cards {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
+    display: flex;
+    justify-content: space-around ; 
+    flex-flow: row wrap;
 }
 
 .advantage_card {
@@ -243,8 +238,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .takeCare_content {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -360,6 +355,7 @@ h1, h2, h3, h4, h5, h6, p {
     gap: 32px;
 }
 
+
 .about_list_title {
     margin: 0;
 }
@@ -384,22 +380,18 @@ h1, h2, h3, h4, h5, h6, p {
 /* "set" section */
 
 .set {
-    height: 550px;
+    box-sizing: border-box;
+    height: 85vh;
     margin-top: 200px;
     background: var(--blue);
     display: flex;
     align-items: center;
 }
 
-.set .container {
-    display: flex;
-    flex-direction: column; 
-}
-
 .set_content {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -469,8 +461,8 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 400;
     font-size: 18px;
     letter-spacing: 0.2px;
-    width: 643px;
     margin-bottom: 65px;
+    width: 45%;
 }
 
 .automated_card_title {
@@ -493,7 +485,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .automated_cards {
    display: flex;
-   flex-direction: row;
+   flex-flow: row;
 }
 
 /* blog */
@@ -502,7 +494,8 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 150px;
 }
 
-.blog .container {}
+.blog .container {
+}
 
 .blog_card_title {
     font-family: Fraunces;
@@ -569,9 +562,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .blog_cards {
+    justify-content: space-around;
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    flex-flow: row wrap;
 }
 
 .blog .btn {
@@ -636,12 +629,12 @@ h1, h2, h3, h4, h5, h6, p {
 .footer .container {
     display: flex;
     flex-direction: column;
-    width: 1230px;
+    width: 80%;
 }
 
 .footer_bottom {
     display: flex;
-    gap: 700px;
+    justify-content: space-between;
     align-items: center;
     margin-top: 121px;
 }
@@ -669,20 +662,17 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--blue);
 }
 
-.footer_logo {
+.footer_logo_img {
     width: 40px;
     height: 45px;
 }
 
 .footer_top {
     display: flex;
-    gap: 313px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.footer_top_right {
-    display: flex;
-    gap: 16px 175px;
-}
 
 .footer_list {
    display: flex;
@@ -725,4 +715,197 @@ h1, h2, h3, h4, h5, h6, p {
 
 .newsletter input::after {
     content: url('assets/icons/arrow-left.png');
+}
+
+/* media */
+
+@media (max-width: 1270px) {
+    .hero .container {
+        justify-content: center;     
+        flex-wrap: wrap;
+    }
+
+    .automated_cards {
+        flex-flow: row wrap;
+    }
+
+    .takeCare_content {
+        flex-flow: column-reverse wrap;
+        justify-content: center; 
+    }
+
+    .about .container {
+       flex-direction: column; 
+       align-items: center;
+    }
+
+    .set_content {
+        flex-flow: column-reverse wrap;
+    }
+}
+
+
+@media (max-width: 950px) {
+
+    .header .container {
+        width: 100%;
+        align-items: center;
+    }
+
+
+
+    .header_btn_wrp {
+       flex-flow: column-reverse wrap;
+    }
+
+    .btn .signin {
+        justify-self: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer .container {
+       width: 100%; 
+    }
+
+    .footer_top {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "logo input"
+                             "list list";
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer_list:nth-child(1) {
+        grid-column: 1; grid-row: 1;
+    }
+
+    .footer_list:nth-child(2) {
+        grid-column: 2; grid-row: 2;
+    }
+
+    .footer_logo {
+        grid-area: logo;
+    }
+
+    .footer_list {
+        grid-area: list;
+    }
+
+    .newsletter {
+        grid-area: input;
+    }
+
+    .trusted_list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "left right";
+    }
+
+    .tursted_company_logo:nth-clild(1,2) {
+        grid-area: left;
+    }
+
+    .trusetd_company_logo:nth-child(3,4) {
+        grid-area: right;
+    }
+    
+    .about_list {
+        flex-direction: column;
+    }
+
+    .takeCare .container  {
+        width: 100%; 
+    }
+
+    .takeCare_title {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 600px) {
+   
+    .header h2 {
+        display: none;
+    }
+
+    .set_subtitle {
+        width: 45vh;
+    }
+
+    .get_started_desc {
+        width: 45vh;
+    }
+
+    .takeCare_title {
+       width: 100%;
+   } 
+
+   .set {
+    height: 85vh;
+   }
+}
+
+@media (max-width: 500px) {
+    .header_list {
+        padding-left: 10px;
+    }
+
+    .header_btn_wrp .header {
+        display: none;
+    }
+
+    .automated_subtitle {
+       width: 80%; 
+    }
+
+    .footer_bottom {
+        flex-direction: column-reverse;        
+    }
+
+    .blog_top_wrp {
+        flex-direction: column;    
+    }
+    
+    .hero_text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero .container {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .hero_title {
+        width: 90%;
+    }
+
+    .container {
+        width: 100%;
+    }
+    
+    .trusted_list {
+       margin-left: auto;
+       margin-right: auto;
+    }
+}
+
+@media (max-width: 400px) {
+   
+    .takeCare_img_wrp {
+        display: none;
+    }
+
+    .set_img_wrp {
+        display: none;
+    }
+
+    .hero_desc {
+        padding: 0;
+    }
 }
